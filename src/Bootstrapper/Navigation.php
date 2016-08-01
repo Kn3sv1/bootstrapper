@@ -280,12 +280,12 @@ class Navigation extends RenderedObject
      */
     protected function dropdownShouldBeActive(array $dropdown)
     {
-		foreach ($dropdown[1] as $item) {
-			if ($this->itemShouldBeActive($item)) {
-				return true;
-			}
-		}
-		
+        foreach ($dropdown[1] as $item) {
+            if ($this->itemShouldBeActive($item)) {
+                return true;
+            }
+        }
+        
         return false;
     }
 
